@@ -1,4 +1,5 @@
 import styles from './styles.module.css';
+import { Link } from "react-router-dom";
 
 const Main = () =>{
 
@@ -8,7 +9,7 @@ const Main = () =>{
     }
 
     return(
-        <div className={styles.main_container}>
+        <><div className={styles.main_container}>
             <nav className={styles.navbar}>
                 <h1>MarineAuth</h1>
                 <button className={styles.white_btn} onClick={handleLogout}>
@@ -16,6 +17,11 @@ const Main = () =>{
                 </button>
             </nav>
         </div>
+            <Link to="/files">
+                <button>
+                    Files
+                </button>
+            </Link></>
         
     )
 };
