@@ -16,6 +16,7 @@ const Main = () =>{
                 </button>
             </nav>
         </div>
+        
     )
 };
 
