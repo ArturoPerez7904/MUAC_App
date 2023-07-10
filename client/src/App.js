@@ -8,9 +8,9 @@ import {FileUploader} from './components/FileUploader';
 
 function App() {
   const user = localStorage.getItem("token");
-  const [files, setFiles] = useState([]);
-  const onSuccess = (savedFiles) => {
-    setFiles(savedFiles)
+  const [file, setFile] = useState();
+  const onSuccess = (savedFile) => {
+    setFile(savedFile)
     };
   return (
     <div>
